@@ -19,7 +19,7 @@ class weatherMain extends Component {
     }
 
     componentDidMount() {
-        axios.get(`http://api.openweathermap.org/data/2.5/forecast?q=${this.state.city}&units=metric&appid=6719f8ac47f8290dedc157d8b54f6433`)
+        axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${this.state.city}&units=metric&appid=6719f8ac47f8290dedc157d8b54f6433`)
             .then(response => {
                 var weatherData = [], tempData = [];
 
